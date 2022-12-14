@@ -144,4 +144,5 @@ cython_debug/
 
 .idea/
 content/*
+!content
 backup_db/
