@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Presentation</title>
+
+</head>
+
+<body onload="countImages()">
+    <div id="content" class="content">
+        <div id="previous" class="navigator left" onclick="slideLeft()"></div>
+        <div id="next" class="navigator right" onclick="slideRight()"></div>
+        <div id="page" class="page"></div>
+        <div id="image-container">
+            <img alt="slide" id="image" />
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>

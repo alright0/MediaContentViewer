@@ -1,0 +1,55 @@
+:root {
+    --body-background: rgb(251, 251, 255);
+    --page-color: lightslategray;
+    --main-color: rgba(188, 224, 255, 0.5);
+    --zero-color: rgba(0, 0, 0, 0);
+    --gradiet-left: linear-gradient(90deg, var(--main-color) 0%, var(--zero-color) 15%);
+    --gradiet-right: linear-gradient(90deg, var(--zero-color) 85%, var(--main-color) 100%);
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--body-background);
+}
+
+.content {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigator {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.left {
+    left: 0%;
+}
+
+.left:hover {
+    background: var(--gradiet-left);
+}
+
+.right {
+    right: 0%
+}
+
+.right:hover {
+    background: var(--gradiet-right);
+}
+
+.page {
+    position: absolute;
+    color: var(--page-color);
+    bottom: 0%
+}
